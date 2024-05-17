@@ -1,10 +1,9 @@
-
 const apiKey = '68e094699525b18a70bab2f86b1fa706';
 const now_playing = `https://api.themoviedb.org/3/trending/movie/day?api_key=${apiKey}`;
 const top_rated = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`;
-const now_airing =`https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&with_networks=1`;
-const nowPlayingIndia = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&with_networks=213`;
-const bollywood = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&with_networks=1024`;
+const now_airing =`https://api.themoviedb.org/3/tv/on_the_air?api_key=${apiKey}`;
+const nowPlayingIndia = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=hi-IN&region=IN&with_original_language=hi`;
+const bollywood = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=hi-IN&region=IN&with_original_language=hi`;
 
 // Define JSS styles
 const styles = {
