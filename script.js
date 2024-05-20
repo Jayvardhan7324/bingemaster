@@ -163,7 +163,7 @@ const korean_series = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey
               item.classList.add('item');
               item.style.backgroundImage = `url('https://image.tmdb.org/t/p/original${movie.backdrop_path}')`;
         
-              
+              movie.overview = movie.overview.substring(0, 100) + '...';
               const content = document.createElement('div');
               content.classList.add('content');
               content.innerHTML = `
